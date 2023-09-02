@@ -2,23 +2,31 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
 	public MainPage()
 	{
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+    public void PedraButton_Clicked(object sender, EventArgs e)
+    {
+
+        opcaoSelecionada(1);
+    }
+
+    public void PapelButton_Clicked(object sender, EventArgs e)
+    {
+        opcaoSelecionada(2);
+    }
+
+    public void TesouraButton_Clicked(object sender, EventArgs e)
+    {
+        opcaoSelecionada(3);
+    }
+
+
+    public void opcaoSelecionada(int opcaoUsuario)
 	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+        TextResultado.Text = opcaoUsuario.ToString();
+    }
 }
 

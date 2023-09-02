@@ -6,34 +6,55 @@
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
-            Padding="30,0"
+            Padding="10,0"
             VerticalOptions="Center">
+            
+            <Label
+                Text="Escolha do App"
+                FontSize="20"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
 
             <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="padrao.png"
+                SemanticProperties.Description="Imagem que mostra a opção escolhida pelo computador"
                 HeightRequest="200"
-                HorizontalOptions="Center" />
+                WidthRequest="200"
+                HorizontalOptions="Center"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,30,0,0">
+                <ImageButton Source="pedra.png"
+                    Clicked="PedraButton_Clicked"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="0,0,10,0"
+                    HeightRequest="100"
+                    WidthRequest="100"/>
+
+                <ImageButton Source="papel.png"
+                    Clicked="PapelButton_Clicked"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="0,0,10,0"
+                    HeightRequest="100"
+                    WidthRequest="100"/>
+
+                <ImageButton Source="tesoura.png"
+                    Clicked="TesouraButton_Clicked"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="0,0,0,0"
+                    HeightRequest="100"
+                    WidthRequest="100"/>
+            </StackLayout>
 
             <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                x:Name="TextResultado"
+                Text="Escolha uma opção acima"
+                SemanticProperties.Description="Resultado da rodada, venceu ou perdeu"
+                FontSize="20"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
 
         </VerticalStackLayout>
     </ScrollView>
