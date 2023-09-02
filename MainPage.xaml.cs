@@ -27,6 +27,10 @@ public partial class MainPage : ContentPage
         Random random = new Random();
         int computadorOpcao = random.Next(1, 4);
 
+        if (computadorOpcao == 1) ImagemOpcaoUsuario.Source = "pedra.png"; 
+        else if (computadorOpcao == 2) ImagemOpcaoUsuario.Source = "papel.png"; 
+        else ImagemOpcaoUsuario.Source = "tesoura.png";        
+
         return computadorOpcao;
     }
 

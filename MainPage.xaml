@@ -16,6 +16,7 @@
                 HorizontalTextAlignment="Center"/>
 
             <Image
+                x:Name="ImagemOpcaoUsuario"
                 Source="padrao.png"
                 SemanticProperties.Description="Imagem que mostra a opção escolhida pelo computador"
                 HeightRequest="200"
