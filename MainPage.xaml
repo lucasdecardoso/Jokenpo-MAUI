@@ -24,25 +24,19 @@
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,30,0,0">
                 <ImageButton Source="pedra.png"
-                    Clicked="PedraButton_Clicked"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
+                    Clicked="PedraButton_Clicked"                             
                     Margin="0,0,10,0"
                     HeightRequest="100"
                     WidthRequest="100"/>
 
                 <ImageButton Source="papel.png"
-                    Clicked="PapelButton_Clicked"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
+                    Clicked="PapelButton_Clicked"                    
                     Margin="0,0,10,0"
                     HeightRequest="100"
                     WidthRequest="100"/>
 
                 <ImageButton Source="tesoura.png"
-                    Clicked="TesouraButton_Clicked"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
+                    Clicked="TesouraButton_Clicked"                    
                     Margin="0,0,0,0"
                     HeightRequest="100"
                     WidthRequest="100"/>
